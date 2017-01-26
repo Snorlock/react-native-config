@@ -1,16 +1,16 @@
 {
   "name": "react-native-config",
-  "version": "0.2.1",
+  "version": "0.0.1",
   "description": "Expose config variables to React Native apps",
   "keywords": ["env", "config", "config-var", "react-native", "android", "ios", "12factor"],
-  "homepage": "https://github.com/luggg/react-native-config",
+  "homepage": "https://github.com/snorlock/react-native-config",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/luggg/react-native-config"
+    "url": "https://github.com/snorlock/react-native-config"
   },
   "private": false,
-  "author": "Pedro Belo",
+  "author": "Snorre Edwin",
   "files": [
     "android/",
     "ios/",
