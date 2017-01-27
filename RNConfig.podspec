@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "RNConfig"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "Bring some 12 factor love to your mobile apps!"
   s.description  = <<-DESC
 Bring some 12 factor love to your mobile apps!
@@ -26,7 +26,7 @@ This is a NPM module for react native that supports cocoapods to be able to prov
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.author       = { "lugg" => "hello@lugg.com" }
+  s.author       = { "Snorre Edwin" => "snorre.lothar.von.gohren.edwin@entur.org" }
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
@@ -38,10 +38,13 @@ This is a NPM module for react native that supports cocoapods to be able to prov
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
-  s.source_files  = 'ios/ReactNativeConfig/**/*.{h,m,ruby}'
+  s.source_files  = 'RNConfig/**/*.{swift,h}'
+  s.resources     = 'RNConfig/**/*.{js}'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.dependency "React"
+
+  s.prepare_command = 'ruby RNConfig/RNConfig/build-xcodeproj-file.ruby'
 
 end

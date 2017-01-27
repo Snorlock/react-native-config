@@ -1,8 +1,16 @@
 {
   "name": "react-native-config-swift",
-  "version": "0.0.3",
+  "version": "0.0.11",
   "description": "Expose config variables to React Native apps",
-  "keywords": ["env", "config", "config-var", "react-native", "android", "ios", "12factor"],
+  "keywords": [
+    "env",
+    "config",
+    "config-var",
+    "react-native",
+    "android",
+    "ios",
+    "12factor"
+  ],
   "homepage": "https://github.com/snorlock/react-native-config",
   "contributors": [],
   "repository": {
@@ -11,11 +19,17 @@
   },
   "private": false,
   "author": "Snorre Edwin",
+  "bin": {
+    "build-ios-env": "./RNConfig/RNConfig/build-env-file.js"
+  },
   "files": [
     "android/",
     "RNConfig/",
     "index.js",
     "RNConfig.podspec"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "jsonfile": "^2.4.0"
+  }
 }
