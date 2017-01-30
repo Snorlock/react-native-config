@@ -2,8 +2,8 @@
 //  RNConfig.h
 //  RNConfig
 //
-//  Created by Snorre L.v.G. Edwin on 25/01/2017.
-//  Copyright © 2017 Snorre L.v.G. Edwin. All rights reserved.
+//  Created by Snorre L.v.G. Edwin on 30/01/2017.
+//  Copyright © 2017 EnturAS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

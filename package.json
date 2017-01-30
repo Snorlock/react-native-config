@@ -1,6 +1,6 @@
 {
   "name": "react-native-config-swift",
-  "version": "0.0.11",
+  "version": "0.0.23",
   "description": "Expose config variables to React Native apps",
   "keywords": [
     "env",
@@ -20,7 +20,7 @@
   "private": false,
   "author": "Snorre Edwin",
   "bin": {
-    "build-ios-env": "./RNConfig/RNConfig/build-env-file.js"
+    "build-ios-env": "./RNConfig/build-env-file.js"
   },
   "files": [
     "android/",
@@ -29,7 +29,5 @@
     "RNConfig.podspec"
   ],
   "license": "MIT",
-  "dependencies": {
-    "jsonfile": "^2.4.0"
-  }
+  "dependencies": {}
 }

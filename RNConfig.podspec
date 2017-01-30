@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "RNConfig"
-  s.version      = "0.0.2"
+  s.version      = "0.0.25"
   s.summary      = "Bring some 12 factor love to your mobile apps!"
   s.description  = <<-DESC
 Bring some 12 factor love to your mobile apps!
@@ -39,12 +39,10 @@ This is a NPM module for react native that supports cocoapods to be able to prov
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.source_files  = 'RNConfig/**/*.{swift,h}'
-  s.resources     = 'RNConfig/**/*.{js}'
+  s.resources     = 'RNConfig/**/*.{json}'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.dependency "React"
-
-  s.prepare_command = 'ruby RNConfig/RNConfig/build-xcodeproj-file.ruby'
 
 end
