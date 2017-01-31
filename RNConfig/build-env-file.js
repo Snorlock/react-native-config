@@ -5,7 +5,7 @@ var configLocation = __dirname+'/config.json';
 if (process.env['ENVFILE']) {
   fileLocation = process.cwd()+'/'+process.env['ENVFILE'];
 } else {
-  fileLocation = process.cwd()+'/.env.staging';
+  fileLocation = process.cwd()+'/.env.develop';
 }
 console.log('Reading from '+fileLocation);
 console.log('Piping too '+configLocation);
