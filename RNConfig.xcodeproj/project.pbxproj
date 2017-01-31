@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		207588641E3F918200EC58DF /* RNConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 207588621E3F918200EC58DF /* RNConfig.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2075886B1E3F92A400EC58DF /* RNConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2075886A1E3F92A400EC58DF /* RNConfig.swift */; };
+		426DEF261E409CCF005B5C1E /* RNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 426DEF251E409CCF005B5C1E /* RNConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		207588621E3F918200EC58DF /* RNConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RNConfig.h; path = RNConfig/RNConfig.h; sourceTree = SOURCE_ROOT; };
 		207588631E3F918200EC58DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = RNConfig/Info.plist; sourceTree = SOURCE_ROOT; };
 		2075886A1E3F92A400EC58DF /* RNConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RNConfig.swift; sourceTree = "<group>"; };
+		426DEF251E409CCF005B5C1E /* RNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 				207588621E3F918200EC58DF /* RNConfig.h */,
 				207588631E3F918200EC58DF /* Info.plist */,
 				2075886A1E3F92A400EC58DF /* RNConfig.swift */,
+				426DEF251E409CCF005B5C1E /* RNConfig.m */,
 			);
 			path = RNConfig;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2075886B1E3F92A400EC58DF /* RNConfig.swift in Sources */,
+				426DEF261E409CCF005B5C1E /* RNConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +260,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = entur.RNConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -276,6 +281,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = entur.RNConfig;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

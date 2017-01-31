@@ -1,7 +1,9 @@
 import Foundation
 
-public class RNConfig {
+@objc(RNConfig)
+public class RNConfig: NSObject {
     
+    @objc(read:)
     public static func read(env: String) -> Any {
         if let value = readFile()?[env] {
             return value

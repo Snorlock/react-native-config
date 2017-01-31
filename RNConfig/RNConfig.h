@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 //! Project version number for RNConfig.
 FOUNDATION_EXPORT double RNConfigVersionNumber;
 
@@ -15,5 +16,4 @@ FOUNDATION_EXPORT double RNConfigVersionNumber;
 FOUNDATION_EXPORT const unsigned char RNConfigVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <RNConfig/PublicHeader.h>
-
 
