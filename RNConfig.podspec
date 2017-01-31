@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "RNConfig"
-  s.version      = "0.0.25"
+  s.version      = "0.0.26"
   s.summary      = "Bring some 12 factor love to your mobile apps!"
   s.description  = <<-DESC
 Bring some 12 factor love to your mobile apps!

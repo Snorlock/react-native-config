@@ -12,7 +12,7 @@ public class RNConfig {
     
     fileprivate static func readFile() -> [String: Any]? {
         let emptyEnvironment = [String: Any]()
-        guard let file = Bundle.init(for: RNConfig.self).path(forResource: "env", ofType: "json") else {
+        guard let file = Bundle.init(for: RNConfig.self).path(forResource: "config", ofType: "json") else {
             print("Environment file was not found. Sure you didn't delete it?")
             return emptyEnvironment
         }
