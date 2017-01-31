@@ -42,11 +42,11 @@ apply from: project(':react-native-config-swift').projectDir.getPath() + "/doten
 
 ## Usage
 
-Create a new file, fex `.env.develop`  in the root of your React Native app:
+Create a new file, fex `.env.develop`  in the root of your React Native app(remember new lines):
 
 ```
 {
-  "BASE_URL"="https://localhost:8080"
+  "BASE_URL"="https://localhost:8080",
   "APP_ID"="qwertasdfg"
 }
 ```

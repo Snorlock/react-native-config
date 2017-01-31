@@ -28,16 +28,16 @@ def readDotEnv = {
     def env = [:]
     println("Reading env from: $envFile")
     try {
-        new File("$project.rootDir/../$envFile").eachLine { line ->
-            line = line.trim();
-            def matcher = (line =~ /^"(\w+)":"([\w:\/\.\-\,]+)"[,]?$/)
-            if (matcher.getCount() == 1 && matcher[0].size() == 3){
-                env.put(matcher[0][1], matcher[0][2])
-            }
-        }
+        def jsonFile = file("$project.rootDir/../$envFile")
+        def parsedJson = new groovy.json.JsonSlurper().parseText(jsonFile.text)
+        env = parsedJson
     } catch (FileNotFoundException ex) {
         println("**************************")
         println("*** Missing .env file ****")
+        println("**************************")
+    } catch (JsonException ex) {
+        println("**************************")
+        println("***   Malformed JSON  ****")
         println("**************************")
     }
     project.ext.set("env", env)
