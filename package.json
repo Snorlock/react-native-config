@@ -1,6 +1,6 @@
 {
   "name": "react-native-config-swift",
-  "version": "0.0.27",
+  "version": "0.0.28",
   "description": "Expose config variables to React Native apps",
   "keywords": [
     "env",
