@@ -4,7 +4,7 @@ import Foundation
 public class RNConfig: NSObject {
     
     @objc(read:)
-    func read(env: String) -> Any {
+    public func read(env: String) -> Any {
         print("Reading value")
         if let value = readFile()?[env] {
             return value
@@ -14,7 +14,7 @@ public class RNConfig: NSObject {
     }
     
     @objc(readFile)
-    func readFile() -> [String: Any]? {
+    public func readFile() -> [String: Any]? {
         print("Reading file")
         let emptyEnvironment = [String: Any]()
         guard let file = Bundle.init(for: RNConfig.self).path(forResource: "config", ofType: "json") else {
