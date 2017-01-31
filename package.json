@@ -1,6 +1,6 @@
 {
   "name": "react-native-config-swift",
-  "version": "0.0.28",
+  "version": "0.0.29",
   "description": "Expose config variables to React Native apps",
   "keywords": [
     "env",
@@ -18,7 +18,7 @@
     "url": "https://github.com/snorlock/react-native-config"
   },
   "private": false,
-  "author": "Snorre Edwin",
+  "author": "Snorre Edwin, Kim Martinsen",
   "bin": {
     "build-ios-env": "./RNConfig/build-env-file.js"
   },
