@@ -4,7 +4,8 @@ import Foundation
 public class RNConfig: NSObject {
     
     @objc(read:)
-    public static func read(env: String) -> Any {
+    func read(env: String) -> Any {
+        print("Reading value")
         if let value = readFile()?[env] {
             return value
         }
@@ -12,7 +13,9 @@ public class RNConfig: NSObject {
         return ""
     }
     
-    fileprivate static func readFile() -> [String: Any]? {
+    @objc(readFile)
+    func readFile() -> [String: Any]? {
+        print("Reading file")
         let emptyEnvironment = [String: Any]()
         guard let file = Bundle.init(for: RNConfig.self).path(forResource: "config", ofType: "json") else {
             print("Environment file was not found. Sure you didn't delete it?")
